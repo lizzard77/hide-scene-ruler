@@ -1,7 +1,10 @@
 {
   "id": "hide-scene-ruler",
   "title": "Hide Scene Ruler",
-  "version": "1.0.0",
+  "version": "#{VERSION}#",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",  
   "compatibility": {
     "minimum": "13",
     "verified": "13"
