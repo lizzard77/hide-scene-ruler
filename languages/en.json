@@ -1,0 +1,4 @@
+{
+  "HSR.SettingLabel": "Disable Token Drag Measurement",
+  "HSR.SettingHint": "If enabled, the movement measurement ruler will not be displayed when dragging tokens in this scene."
+}
