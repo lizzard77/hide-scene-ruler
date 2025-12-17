@@ -68,3 +68,21 @@ Hooks.on("canvasReady", () => {
     token.ruler.renderFlags.set({ refreshState: true });
   }
 });
+
+Hooks.on("updateScene", (scene, data, options, userId) => {
+  if (data.flags?.[MODULE_ID]?.[FLAG_NAME] !== undefined) {
+    // If the hideRuler flag was changed, refresh tokens in the current scene if it's the active one
+    if (scene.id === canvas.scene?.id) {
+      const isHidden = scene.getFlag(MODULE_ID, FLAG_NAME) || false;
+      if (isHidden) {
+        console.log(`${MODULE_ID} | Hiding rulers for all tokens in scene "${scene.name}"`);
+      } else {
+        console.log(`${MODULE_ID} | Showing rulers for all tokens in scene "${scene.name}"`);
+      }
+      
+      for (const token of canvas.tokens.placeables) {
+        token.ruler.renderFlags.set({ refreshState: true });
+      }
+    }
+  }
+});
