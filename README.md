@@ -25,7 +25,7 @@ The change takes effect immediately when you view the scene. Each scene can have
 
 1. In Foundry VTT setup, go to the Add-on Modules tab
 2. Click "Install Module"
-3. Paste the manifest URL or search for "Hide Scene Ruler"
+3. Paste the manifest URL: https://github.com/lizzard77/hide-scene-ruler/releases/latest/download/module.json
 4. Click Install
 
 ## Compatibility
